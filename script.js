@@ -1,21 +1,3 @@
-// // ------------------------------------------
-// //interação com a API
-// var consultaCep = fetch('https://viacep.com.br/ws/01001000/json/')
-// //então converte a requisição em json
-// .then(resposta => resposta.json())
-// // então imprime a resposta no console ou pega o erro e o imprime no console caso a requisição com o then dê erro usando o catch
-// .then(r => {
-//     if(r.erro){
-//         throw Error('Esse cep não existe !')
-//     }else
-//     console.log(r)})
-// .catch(erro => console.log(erro))
-// .finally(mensagem => console.log('Processamento concluído !'));
-// // ------------------------------------------
-// console.log(consultaCep)
-
-
-//Async Await - para evitar quando vai se usar muito o .then
 
 async function buscaendereco(cep) {
     var msgErro = document.getElementById('erro');
